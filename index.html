@@ -8,13 +8,192 @@
     <script src="https://kit.fontawesome.com/f9664e8ca8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Tienda Mascoteros</title>
 </head>
 
 <body>
-    <h1>Hola mundo</h1>
+
+    <header class="header__logo">
+        <div class="header__isotipo">
+            <img src="./assets/img/logo.webp" alt="logo-tienda">
+            <p>Mascoteros</p>
+        </div>
+        <i class="fa fa-bars" id="dropdown-icon"></i>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <aside class="menu-lateral">
+            <div class="navbar-items">
+                <a href="#inicio" class="active menu-item" id="inicio">Inicio</a>
+                <a href="#contacto" class="menu-item">Contacto</a>
+                <a href="#nosotros" class="menu-item">Nosotros</a>
+                <a class="dropdown-btn menu-item">Ir a
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-container">
+                    <a href="#camas" class="menu-item">Camas</a>
+                    <a href="#juguetes" class="menu-item">Juguetes</a>
+                    <a href="#abrigos" class="menu-item">Abrigos</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contendor__producto">
+
+            <p class="categoria__nombre"> Camas</p>
+            <div class="categoria" id="camas">
+                <div class="card__producto">
+                    <div class="card__producto-nombre-imagen">
+                        <p class="card__producto-nombre">Cama Pequeña suave</p>
+                        <img src="./assets/img/cama.webp" alt="">
+                        <div class="overlay">
+                            Esta es una cama acolchada de 50cm de alto x 90cm de diámetro.
+                        </div>
+                    </div>
+                    <div class="card__precio-button">
+                        <div class="precio-border">
+                            <span class="card__producto-precio">$19.590</span>
+                        </div>
+                        <button class="card__btn-comprar">Agregar</button>
+
+                    </div>
+                </div>
+                <div class="card__producto">
+                    <div class="card__producto-nombre-imagen">
+                        <p class="card__producto-nombre">Cama Mediana Acolchada Simple</p>
+                        <img src="./assets/img/cama-sillon.webp" alt="">
+                        <div class="overlay">
+                            Esta es una cama acolchada de 90cm de alto x 150cm de diámetro.
+                        </div>
+                    </div>
+                    <div class="card__precio-button">
+                        <div class="precio-border">
+                            <span class="card__producto-precio">$29.680</span>
+                        </div>
+                        <button class="card__btn-comprar">Agregar</button>
+                    </div>
+                </div>
+                <div class="card__producto">
+                    <div class="card__producto-nombre-imagen">
+                        <p class="card__producto-nombre">Cama Premium XL </p>
+                        <img src="./assets/img/cama premium-2.webp" alt="">
+                        <div class="overlay">
+                            Esta es una cama acolchada de 50cm de alto x 250cm de diámetro. <br>
+                            Revestida con algodón
+                        </div>
+                    </div>
+                    <div class="card__precio-button">
+                        <div class="precio-border">
+                            <span class="card__producto-precio">$70.850</span>
+                        </div>
+                        <button class="card__btn-comprar">Agregar</button>
+                    </div>
+                </div>
+                <div class="card__producto">
+                    <div class="card__producto-nombre-imagen">
+                        <p class="card__producto-nombre">Cama Estilo Casa Mediano</p>
+                        <img src="./assets/img/cama-casa.webp" alt="">
+                        <div class="overlay">
+                            Cama con forma de Casa para gatos, 90cm de alto x 75cm de ancho x  80cm 
+                            de profundidad
+                        </div>
+                    </div>
+                    <div class="card__precio-button">
+                        <div class="precio-border">
+                            <span class="card__producto-precio">$55.990</span>
+                        </div>
+                        <button class="card__btn-comprar">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="categoria__nombre"> juguetes</p>
+            <div class="categoria" id="juguetes">
+                <div class="card__producto">
+                    <div class="card__producto-nombre-imagen">
+                        <p class="card__producto-nombre">Pelota Juguete Inteligente</p>
+                        <img src="./assets/img/pelota-inteligente.webp" alt="">
+                    </div>
+                    <div class="card__precio-button">
+                        <div class="precio-border">
+                            <span class="card__producto-precio">$7.790</span>
+                        </div>
+                        <button class="card__btn-comprar">Agregar</button>
+                    </div>
+                </div>
+                <div class="card__producto">
+                    <div class="card__producto-nombre-imagen">
+                        <p class="card__producto-nombre">Dispensador Premio</p>
+                        <img src="./assets/img/dispensador-premio.webp" alt="">
+                    </div>
+                    <div class="card__precio-button">
+                        <div class="precio-border">
+                            <span class="card__producto-precio">$8.350</span>
+                        </div>
+                        <button class="card__btn-comprar">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="categoria__nombre">Abrigos</p>
+            <div class="categoria" id="abrigos">
+                <div class="card__producto">
+                    <div class="card__producto-nombre-imagen">
+                        <p class="card__producto-nombre">Chaleco Pequeño</p>
+                        <img src="./assets/img/chaleco-grande.webp" alt="">
+                    </div>
+                    <div class="card__precio-button">
+                        <div class="precio-border">
+                            <span class="card__producto-precio">$9.980</span>
+                        </div>
+                        <button class="card__btn-comprar">Agregar</button>
+                    </div>
+                </div>
+                <div class="card__producto">
+                    <div class="card__producto-nombre-imagen">
+                        <p class="card__producto-nombre">Chaleco Grande</p>
+                        <img src="./assets/img/chaleco-mediano.webp" alt="">
+                    </div>
+                    <div class="card__precio-button">
+                        <div class="precio-border">
+                            <span class="card__producto-precio">12.690</span>
+                        </div>
+                        <button class="card__btn-comprar">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paginas">
+                <a href="" class="pagina"><i class="fa-solid fa-backward-step"></i></a>
+                <a href="" class="pagina active">1</a>
+                <a href="" class="pagina">2</a>
+                <a href="" class="pagina">3</a>
+                <a href="" class="pagina"><i class="fa-solid fa-forward-step"></i></a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            Desafio Latam - Bastián Gabrielli Todos los Derechos Reservados &TRADE;
+        </p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
 </body>
+<script src="./assets/js/scripts.js"></script>
 
 </html>
